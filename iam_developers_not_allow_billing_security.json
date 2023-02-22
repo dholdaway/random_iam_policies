@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*",
+      "Condition": {
+        "NotResource": [
+          "arn:aws:iam::*:user/*",
+          "arn:aws:iam::*:role/*",
+          "arn:aws:iam::*:group/Security",
+          "arn:aws:iam::*:policy/Security",
+          "arn:aws:iam::*:group/Billing",
+          "arn:aws:iam::*:policy/Billing"
+        ]
+      }
+    }
+  ]
+}

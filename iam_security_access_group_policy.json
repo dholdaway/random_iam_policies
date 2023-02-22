@@ -1,0 +1,24 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:*",
+        "organizations:*",
+        "cloudtrail:*",
+        "config:*",
+        "guardduty:*",
+        "macie:*",
+        "wafv2:*",
+        "shield:*",
+        "kms:*",
+        "secretsmanager:*",
+        "sso:*",
+        "sso-directory:*",
+        "sts:AssumeRole"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
